@@ -16,7 +16,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     chrome_options.add_argument('--disable-dev-shm-usage')
 
     driver = webdriver.Chrome("/usr/local/bin/chromedriver", chrome_options=chrome_options)
-    driver.get('http://www.ubuntu.com/')
+    driver.get('http://www.chipotle.com/')
     links = driver.find_elements_by_tag_name("a")
     link_list = ""
     for link in links:
